@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Track Calorie</title>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-light bg-dark">
+        <a class="navbar-brand text-center text-white mx-auto" href="#">TRACK CALORIE</a>
+        <a class="navbar-brand text-center text-white badge-primary p-2" href="#">CLEAR ALL</a>
+    </nav>
+    <div class="container">
+        <div class="card m-5">
+            <form>
+                <h2 class="display-5 p-2 text-center">ADD MEAL/ FOOD ITEM & CALORIES</h2>
+                <div class="row m-5 form-group ">
+
+                    <div class="col-md-6 mb-2">
+                        <input type="text" class="form-control" placeholder="ADD MEAL" id='add-meal'>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <input type="number" class="form-control" placeholder=" ADD CALORIE" id='add-calorie'>
+                    </div>
+                </div>
+                <div class="text-center m-5">
+                    <button class=" add btn btn-outline-primary mb-2"><svg class="bi bi-plus" width="1em" height="1em"
+                            viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z"
+                                clip-rule="evenodd" />
+                        </svg></i>ADD MEAL</button>
+                    <!-- <button class="btn btn-outline-warning mb-2">UPDATE MEAL</button>
+                    <button class="btn btn-outline-danger mb-2 ">REMOVE MEAL</button> -->
+                    <button class="back btn btn-outline-info mb-2"><svg class="bi bi-arrow-90deg-left" width="1em"
+                            height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M6.104 2.396a.5.5 0 010 .708L3.457 5.75l2.647 2.646a.5.5 0 11-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M2.75 5.75a.5.5 0 01.5-.5h6.5a2.5 2.5 0 012.5 2.5v5.5a.5.5 0 01-1 0v-5.5a1.5 1.5 0 00-1.5-1.5h-6.5a.5.5 0 01-.5-.5z"
+                                clip-rule="evenodd" />
+                        </svg>BACK</button>
+                </div>
+            </form>
+        </div>
+        <p class='display-4 text-center'>TOTAL CALORIE : 0</p>
+        <hr>
+
+
+        <ul class="list-group">
+            <!--  <li class="list-group-item d-flex justify-content-between align-items-center">
+                EGGS : <em>300 calories</em>
+                <a href="#" class="badge badge-primary badge-pill">X</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                ICE-CREAM : <em>500 calories</em>
+                <a href="#" class="badge badge-primary badge-pill">X</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                STEAK : <em>700 calories</em>
+                <a href="#" class="badge badge-primary badge-pill">X</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                TUNA : <em>500 calories</em>
+                <a href="#" class="badge badge-primary badge-pill">X</a>
+            </li>-->
+        </ul>
+
+
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
